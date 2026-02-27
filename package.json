@@ -1,0 +1,22 @@
+{
+  "name": "lettie-cli",
+  "version": "0.1.0",
+  "description": "Search Rightmove listings from your terminal",
+  "type": "module",
+  "bin": {
+    "lettie": "./dist/index.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsx src/index.ts"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^25.3.2",
+    "tsx": "^4.7.0",
+    "typescript": "^5.4.0"
+  }
+}
