@@ -2,6 +2,8 @@
 
 Search Rightmove listings from your terminal. Useful for AI agents (JSON output) and humans (pretty cards).
 
+Part of [Lettie](https://lettie.uk) — an AI flat-hunting agent for London rentals.
+
 Zero runtime dependencies. Node 18+.
 
 ## Install
