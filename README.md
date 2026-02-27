@@ -11,8 +11,7 @@ Zero runtime dependencies. Node 18+.
 ```bash
 git clone https://github.com/john-ds-mc/lettie-cli.git
 cd lettie-cli
-npm install
-npm run build
+npm install && npm run build && npm link
 ```
 
 ## Usage
@@ -21,29 +20,29 @@ npm run build
 
 ```bash
 # Search rentals in Clapham, 2 beds, max £2500/month
-npx tsx src/index.ts search --area "Clapham" --beds 2 --max-price 2500
+lettie search --area "Clapham" --beds 2 --max-price 2500
 
 # Buy instead of rent
-npx tsx src/index.ts search --area "Hackney" --type buy --max-price 500000
+lettie search --area "Hackney" --type buy --max-price 500000
 
 # Sort by price, limit results
-npx tsx src/index.ts search --area "Brixton" --sort price-asc --limit 5
+lettie search --area "Brixton" --sort price-asc --limit 5
 
 # JSON output for piping
-npx tsx src/index.ts search --area "Clapham" --json | jq '.results[0]'
+lettie search --area "Clapham" --json | jq '.results[0]'
 ```
 
 ### View
 
 ```bash
 # View full details by listing ID
-npx tsx src/index.ts view 171428942
+lettie view 171428942
 
 # Or by URL
-npx tsx src/index.ts view "https://www.rightmove.co.uk/properties/171428942"
+lettie view "https://www.rightmove.co.uk/properties/171428942"
 
 # JSON output
-npx tsx src/index.ts view 171428942 --json
+lettie view 171428942 --json
 ```
 
 ## Search options
